@@ -52,11 +52,11 @@ try:
             driver.find_element("xpath", '/html/body/div[1]/div[1]/section/div/div/div[1]/div/center/a[1]').click()
     except IndexError:
         print("Index out of range")
-        # for i in range(0):
-        #     parse(driver)
+        for i in range(2):
+            parse(driver)
         # for i in range(10):
         #     parse1(driver)
-        for i in range(15):
+        for i in range(1):
             parse2(driver)
 
 except NoSuchElementException:
@@ -65,10 +65,10 @@ except NoSuchElementException:
 
         driver.find_element("xpath", '/html/body/div[1]/div[1]/section/div/div/div[1]/div/center/a[1]').click()
 
-        for i in range(15):
+        for i in range(2):
             parse(driver)
         # for i in range(10):
         #     parse1(driver)
-        for i in range(15):
+        for i in range(1):
             parse2(driver)
     # sleep(888)
